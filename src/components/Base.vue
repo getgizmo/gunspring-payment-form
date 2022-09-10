@@ -45,7 +45,12 @@
 <style scoped>
 #app-container {
   padding: 50px 0;
+  background-image: url(@/assets/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
 #payment-form {
   box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 30%);
   background: white;
@@ -89,9 +94,9 @@
 #powered img {
   height: 50px;
 }
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   #app-container {
     padding: 25px 0;
   }
-}
+} */
 </style>

@@ -12,10 +12,3 @@
 .btn-gs-secondary:hover {
   background: #000;
 }
-
-#app {
-  background-image: url(@/assets/images/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
