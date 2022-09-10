@@ -68,9 +68,13 @@
   font-style: italic;
 }
 
+:root {
+  --doc-height: 100%;
+}
+
 html,
 body {
-  height: 100%;
+  height: var(--doc-height);
 }
 
 body {

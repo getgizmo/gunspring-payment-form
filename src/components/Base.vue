@@ -45,7 +45,7 @@
 <style scoped>
 #app-container {
   padding: 50px 0;
-  height: 100%;
+  height: 100vh;
 }
 #payment-form {
   box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 30%);
