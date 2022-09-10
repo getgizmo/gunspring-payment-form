@@ -1,0 +1,20 @@
+body {
+  background-image: url(@/assets/images/background.png);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.btn-gs-primary {
+  background: #d32f2f;
+}
+.btn-gs-primary:hover {
+  background: #c62828;
+}
+
+.btn-gs-secondary {
+  background: #333;
+}
+
+.btn-gs-secondary:hover {
+  background: #000;
+}
