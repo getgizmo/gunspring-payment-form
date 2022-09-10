@@ -81,11 +81,13 @@ function validateCardInfo() {
 
 function goToBillingInfo() {
   formShowStore.currentForm = "billing-info";
+  window.scrollTo(0, 0);
 }
 
 function submit() {
   if (validateCardInfo()) {
     formShowStore.currentForm = "processing-payment";
+    window.scrollTo(0, 0);
   }
 }
 

@@ -103,11 +103,13 @@ function validateBillingInfo() {
 
 function goToPersonalInfo() {
   formShowStore.currentForm = "personal-info";
+  window.scrollTo(0, 0);
 }
 
 function goToCardInfo() {
   if (validateBillingInfo()) {
     formShowStore.currentForm = "card-info";
+    window.scrollTo(0, 0);
   }
 }
 </script>

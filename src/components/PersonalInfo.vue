@@ -59,6 +59,7 @@ function validatePersonalInfo() {
 function goToBillinInfo() {
   if (validatePersonalInfo()) {
     formShowStore.currentForm = "billing-info";
+    window.scrollTo(0, 0);
   }
 }
 </script>
