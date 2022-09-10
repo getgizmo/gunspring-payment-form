@@ -45,10 +45,6 @@
 <style scoped>
 #app-container {
   padding: 50px 0;
-  background-image: url(@/assets/images/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 #payment-form {
