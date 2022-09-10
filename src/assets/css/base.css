@@ -68,9 +68,13 @@
   font-style: italic;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Roboto" !important;
-  padding: 50px 0;
 }
 
 .fade-enter-active,

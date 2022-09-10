@@ -1,37 +1,39 @@
 <script setup></script>
 
 <template>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-7">
-        <div id="payment-form">
-          <div id="header">
-            <div class="text-center mb-3">
-              <a href="https://ddlegio.com" target="_blank"
-                ><img src="/logo-organization.png" id="logo"
-              /></a>
+  <div id="app-container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-7">
+          <div id="payment-form">
+            <div id="header">
+              <div class="text-center mb-3">
+                <a href="https://ddlegio.com" target="_blank"
+                  ><img src="/logo-organization.png" id="logo"
+                /></a>
+              </div>
+              <div class="text-center">
+                <a
+                  href="https://ddlegio.com"
+                  target="_blank"
+                  id="organization"
+                  class="mb-0"
+                  >LEGIO</a
+                >
+              </div>
             </div>
-            <div class="text-center">
-              <a
-                href="https://ddlegio.com"
-                target="_blank"
-                id="organization"
-                class="mb-0"
-                >LEGIO</a
-              >
+            <div id="form-content">
+              <Transition name="fade" mode="out-in">
+                <slot></slot>
+              </Transition>
             </div>
-          </div>
-          <div id="form-content">
-            <Transition name="fade" mode="out-in">
-              <slot></slot>
-            </Transition>
-          </div>
-          <div id="footer">
-            <div id="powered">
-              <p class="mb-1">powered by</p>
-              <a href="https://gunspring.com" target="_blank"
-                ><img src="/logo-gunspring.svg"
-              /></a>
+            <div id="footer">
+              <div id="powered">
+                <p class="mb-1">powered by</p>
+                <a href="https://gunspring.com" target="_blank"
+                  ><img src="/logo-gunspring.svg"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -41,6 +43,10 @@
 </template>
 
 <style scoped>
+#app-container {
+  padding: 50px 0;
+  height: 100%;
+}
 #payment-form {
   box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 30%);
   background: white;
@@ -82,6 +88,6 @@
 }
 
 #powered img {
-  height: 75px;
+  height: 50px;
 }
 </style>
